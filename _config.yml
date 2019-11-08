@@ -12,12 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
+
+
+# remote_theme           : "qualitia/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Site Title"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
 description              : "An amazing website."
@@ -29,6 +32,11 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+
+permalink: /:categories/:title
+paginate: 5 # amount of posts to show
+paginate_path: /blog/page:num/
+
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -65,7 +73,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -227,11 +235,15 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
+ - jekyll-include-cache # Keep this plugin when using "Minimal Mistakes" theme
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
+ - jekyll-sitemap
+ - jekyll-gist
+ - jemoji
+
+
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -289,6 +301,27 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
+
+author:
+    name: "Ibrahim Kazanci"
+    avatar: #url
+    bio: #Bio text about me here
+    email: i@kazanci.ca
+    uri: "https://www.qualitia.com"
+    home: # null (default), "absolute or relative url to link to author home    "
+    twitter: qualitiaenergy # twitter user name here
+
+#atom_feed:    #This is used for Custom feed URL if desired
+  #path: "feedburner feed url here"
