@@ -1,6 +1,6 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
+# https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 # Copy paste everything in the default theme to make it easy to copy paste back to new sites
 
 
@@ -17,29 +17,11 @@ name                     : "K.W. Master"
 locale                   : "en-US"
 title_separator          : "|"
 
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+email: koolwebsites.com@gmail.com
+#twitter_username:
+#github_username:
+#timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-remote_theme: qualitia/minimal-mistakes
-minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
-plugins:
- - jekyll-include-cache # Keep this plugin when using "Minimal Mistakes" theme
- - jekyll-feed
- - jekyll-seo-tag
- - jekyll-paginate
- - jekyll-sitemap
- - jekyll-gist
- - jemoji
-
-# The configuration below needs to be on all sites\
-# Add the lines below in the default theme also so I can copy-paste
 # permalink: /:categories/:title
 permalink: /:title
 paginate: 5 # amount of posts to show
@@ -49,13 +31,28 @@ search                   : true # true, false (default)
 search_full_content      : false # true, false (default)
 search_provider          : # lunr (default), algolia, google
 
-
-email: koolwebsites.com@gmail.com
-#twitter_username:
-#github_username:
-#timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 include: ["_pages"]
+
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # "/assets/images/88x88.png" path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+
+remote_theme: qualitia/minimal-mistakes
+minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+plugins:
+ - jekyll-include-cache # Keep this plugin when using "Minimal Mistakes" theme
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
+ - jekyll-sitemap
+ - jekyll-gist
+ - jemoji
 
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
@@ -293,16 +290,17 @@ compress_html:
   ignore:
     envs: development
 
+#teaser: /assets/images/500x300.png
 
-# Defaults
+# Front Matter Defaults: https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "" # an empty string here means all files in the project
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -310,11 +308,11 @@ defaults:
 
   # _pages
   - scope:
-      path: ""
+      path: "" # an empty string here means all files in the project
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
 
 
 category_archive:
@@ -329,3 +327,9 @@ tag_archive:
 paginate: 5 # amount of posts to show
 paginate_path: /blog/page:num/
 #paginate_path: /page:num/
+
+
+# YAML Post/Page Front Matter
+
+#header:
+#  teaser: /assets/images/my-awesome-post-teaser.jpg
