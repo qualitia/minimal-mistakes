@@ -23,7 +23,9 @@ title                    : "Site Title"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
-description              : "An amazing website."
+description              : >- #Next lines is the full description
+  An amazing website which is
+  part of Kool Websites.
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -33,9 +35,18 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 
+# Outputting
 permalink: /:categories/:title
 paginate: 5 # amount of posts to show
 paginate_path: /blog/page:num/
+#paginate_path: /page:num/
+
+
+#email:
+#twitter_username:
+#github_username:
+#timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
 
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
@@ -170,7 +181,7 @@ include:
   - .htaccess
   - _pages
   - _posts
-exclude:
+exclude: # Exclude from processing
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -227,13 +238,6 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -298,7 +302,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
@@ -308,14 +312,22 @@ defaults:
       share: true
       related: true
 
-defaults:
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
+      author_profile: true
 
 
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+  
 #atom_feed:    #This is used for Custom feed URL if desired
   #path: "feedburner feed url here"
