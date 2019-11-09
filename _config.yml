@@ -112,14 +112,16 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
-
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "K.W.Master"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Webmaster who master the web."
+  location         : "Canada"
+  uri: "https://www.KoolWebsites.com"
+  home: # null (default), "absolute or relative url to link to author home    "
+  twitter: qualitiaenergy # twitter user name here
+  email            : koolwebsites.com@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -313,15 +315,6 @@ defaults:
     values:
       layout: single
 
-
-author:
-    name: "Ibrahim Kazanci"
-    avatar: #url
-    bio: #Bio text about me here
-    email: i@kazanci.ca
-    uri: "https://www.qualitia.com"
-    home: # null (default), "absolute or relative url to link to author home    "
-    twitter: qualitiaenergy # twitter user name here
 
 #atom_feed:    #This is used for Custom feed URL if desired
   #path: "feedburner feed url here"
