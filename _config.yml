@@ -19,10 +19,10 @@ minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Kool Website site"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "K.W. Master"
 description              : >- #Next lines is the full description
   An amazing website which is
   part of Kool Websites.
@@ -125,7 +125,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "K.W.Master"
+  name             : "K.W. Master"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Webmaster who master the web."
   location         : "Canada"
@@ -302,7 +302,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: "_posts"
+      path: ""
       type: posts
     values:
       layout: single
@@ -314,7 +314,7 @@ defaults:
 
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
@@ -328,6 +328,3 @@ tag_archive:
   type: liquid
   path: /tags/
 
-  
-#atom_feed:    #This is used for Custom feed URL if desired
-  #path: "feedburner feed url here"
