@@ -329,7 +329,17 @@ paginate_path: /blog/page:num/
 #paginate_path: /page:num/
 
 
-# YAML Post/Page Front Matter
+# YAML Post Front Matter
+# Working with Posts: https://mmistakes.github.io/minimal-mistakes/docs/posts/
+#layout: single
+#excerpt: #This is important for SEO
+#header:
+#  teaser: /assets/images/my-awesome-post-teaser.jpg
 
+
+# YAML Page Front Matter
+# Working with Pages: https://mmistakes.github.io/minimal-mistakes/docs/pages/
+#layout: single
+#excerpt: #This is important for SEO
 #header:
 #  teaser: /assets/images/my-awesome-post-teaser.jpg
