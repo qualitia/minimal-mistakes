@@ -13,6 +13,7 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 
+# domain: {{ site.url | split: "//" | reverse | first }}
 
 # remote_theme           : "qualitia/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -42,11 +43,12 @@ paginate_path: /blog/page:num/
 #paginate_path: /page:num/
 
 
-#email:
+email: koolwebsites.com@gmail.com
 #twitter_username:
 #github_username:
 #timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+include: ["_pages"]
 
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
@@ -249,8 +251,6 @@ plugins:
  - jekyll-sitemap
  - jekyll-gist
  - jemoji
-
-
 
 # mimic GitHub Pages with --safe
 whitelist:
