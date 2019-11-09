@@ -1,22 +1,18 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# Copy paste everything in the default theme to make it easy to copy paste back to new sites
+remote_theme           : "qualitia/minimal-mistakes"
+minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-
-# These are the lines mostly requires changing on individual sites
-
-title: Success 101 | Rules of Success!
-subtitle                 : # site tagline that appears below site title in masthead
-description              : >- #Next lines is the full description
-  This website is for showing you the path to success.
-  We show you the way and you do the walking.
-  Good luck with your journey to success.
-
-name                     : "K.W. Master"
+# Site Settings
 locale                   : "en-US"
+title                    : "Kool Website site"
 title_separator          : "|"
-
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : "K.W. Master"
+description              : >- #Next lines is the full description
+  An amazing website which is
+  part of Kool Websites.
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -25,30 +21,6 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-
-remote_theme: qualitia/minimal-mistakes
-minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
-plugins:
- - jekyll-include-cache # Keep this plugin when using "Minimal Mistakes" theme
- - jekyll-feed
- - jekyll-seo-tag
- - jekyll-paginate
- - jekyll-sitemap
- - jekyll-gist
- - jemoji
-
-# The configuration below needs to be on all sites\
-# Add the lines below in the default theme also so I can copy-paste
-# permalink: /:categories/:title
-permalink: /:title
-paginate: 5 # amount of posts to show
-paginate_path: /blog/page:num/
-
-search                   : true # true, false (default)
-search_full_content      : false # true, false (default)
-search_provider          : # lunr (default), algolia, google
-
 
 email: koolwebsites.com@gmail.com
 #twitter_username:
