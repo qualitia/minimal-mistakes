@@ -23,6 +23,7 @@ email: koolwebsites.com@gmail.com
 #github_username:
 #timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+# Outputting
 # permalink: /:categories/:title
 permalink: /:title
 paginate: 10 # amount of posts to show
@@ -322,13 +323,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
-# Outputting
-#permalink: /:title  # permalink: /:categories/:title
-paginate: 5 # amount of posts to show
-paginate_path: /blog/page:num/
-#paginate_path: /page:num/
-
 
 # YAML Post Front Matter
 # Working with Posts: https://mmistakes.github.io/minimal-mistakes/docs/posts/
