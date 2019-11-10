@@ -1,6 +1,6 @@
 ---
-# Use index.html when you want posts to show in the home page.
-layout: home
+# Use index.md when you have home page content. And keep blog posts in different page.
+layout: splash
 author_profile: true
 header:
     #image: /assets/images/wavyblue.jpg
