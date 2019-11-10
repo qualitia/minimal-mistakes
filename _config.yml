@@ -6,8 +6,9 @@
 
 # These are the lines mostly requires changing on individual sites
 
+
 title: Success 101 | Rules of Success!
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : Rules of Success! # site tagline that appears below site title in masthead
 description              : >- #Next lines is the full description
   This website is for showing you the path to success.
   We show you the way and you do the walking.
@@ -130,7 +131,7 @@ analytics:
 # Site Author
 author:
   name             : "K.W. Master"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Webmaster who master the web."
   location         : "Canada"
   uri: "https://www.KoolWebsites.com"

@@ -2,16 +2,16 @@
 main:
   - title: "Home"
     url: /
-  - title: "Music Video"
-    url: /music-video/
   - title: "Blog"
     url: /blog/
+  #- title: "Posts"
+  #  url: /posts/
+  - title: "Categories"
+    url: /categories/
+  #- title: "Tags"
+  #  url: /tags/
   - title: "About"
     url: /about/
-  - title: "Careers"
-    url: https://www.Karyera.com
-  - title: "Contact Us"
-    url: /contact/  
   
   # - title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
