@@ -25,7 +25,7 @@ email: koolwebsites.com@gmail.com
 
 # permalink: /:categories/:title
 permalink: /:title
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /blog/page:num/
 
 search                   : true # true, false (default)
