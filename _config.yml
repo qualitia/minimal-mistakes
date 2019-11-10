@@ -136,9 +136,11 @@ author:
   bio              : "Webmaster who master the web."
   location         : "Canada"
   uri: "https://www.KoolWebsites.com"
-  home: # null (default), "absolute or relative url to link to author home    "
-  twitter: qualitiaenergy # twitter user name here
-  email            : koolwebsites.com@gmail.com
+  #home: # null (default), "absolute or relative url to link to author home    "
+  twitter: koolwebsitescom # twitter user name here
+  email: koolwebsites.com@gmail.com
+
+  #For some reason the link below not working? Find out why!
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -160,6 +162,7 @@ author:
       # url: "https://instagram.com/"
 
 # Site Footer
+#For some reason the link below not working? Find out why!
 footer:
   links:
     - label: "Twitter"
